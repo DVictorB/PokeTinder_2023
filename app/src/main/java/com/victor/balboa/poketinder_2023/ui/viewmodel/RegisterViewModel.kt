@@ -1,11 +1,10 @@
 package com.victor.balboa.poketinder_2023.ui.viewmodel
 
-import com.victor.balboa.poketinder_2023.util.SharedPreferenceUtil
-
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.victor.balboa.poketinder_2023.data.model.User
+
 import java.util.Objects
 
 class RegisterViewModel (private val context: Context): ViewModel(){
@@ -17,6 +16,7 @@ class RegisterViewModel (private val context: Context): ViewModel(){
     val goSuccessActivity = MutableLiveData<Boolean>()
     val passwordConfirmation = MutableLiveData<Boolean>()
 
+
     fun onCreate(){
         sharedPreferenceUtil = SharedPreferenceUtil().also {
             it.setSharedPreference(context)
@@ -26,6 +26,7 @@ class RegisterViewModel (private val context: Context): ViewModel(){
     fun validateInputs(name: String, email: String, password: String, password2: String) {
         if (name.isEmpty() || email.isEmpty() || password.isEmpty() || password2.isEmpty()) {
             emptyFieldsError.postValue(true)
+
         } else if (password !== password2) {
             passwordConfirmation.postValue(true)
         }
