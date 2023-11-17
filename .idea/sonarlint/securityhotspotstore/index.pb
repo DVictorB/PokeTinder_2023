@@ -51,3 +51,13 @@ Uapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/FavoriteViewMo
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/HomeViewModel.kt,5\4\54516756ae04c566c507803547ec8332291db75a
 Å
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/InfoViewModel.kt,2\5\25b651ee6ad4033f2f3e2c3e8f89e872abb261f5
+É
+Sapp/src/main/java/com/victor/balboa/poketinder_2023/data/database/dao/PokemonDao.kt,f\1\f11798075dc21180f943acdcd00b8d6eee334165
+ç
+]app/src/main/java/com/victor/balboa/poketinder_2023/data/database/entities/MyPokemonEntity.kt,2\0\201fb93bd98759bbf9ed489e55a52ccd82e0f0b0
+Ñ
+Tapp/src/main/java/com/victor/balboa/poketinder_2023/data/database/PokemonDatabase.kt,a\6\a61e69976d446da5d299087196c37c00a7f9a565
+~
+Napp/src/main/java/com/victor/balboa/poketinder_2023/holder/MyPokemonsHolder.kt,d\1\d1b9501161edda3de49473bd391208f8d6cfb189
+Ä
+Papp/src/main/java/com/victor/balboa/poketinder_2023/adapter/MyPokemonsAdapter.kt,3\d\3dce331fb49fb1224943f6d126b762eda31317e7
