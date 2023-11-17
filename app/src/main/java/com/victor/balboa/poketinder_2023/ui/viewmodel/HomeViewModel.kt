@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class MainViewModel: ViewModel() {
+class HomeViewModel: ViewModel() {
 
     val isLoading = MutableLiveData<Boolean>()
     val pokemonList = MutableLiveData<List<PokemonResponse>>()
@@ -43,6 +43,3 @@ class MainViewModel: ViewModel() {
     }
 
 }
-
-
-

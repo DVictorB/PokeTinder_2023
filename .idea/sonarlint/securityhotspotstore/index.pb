@@ -37,3 +37,17 @@ Rapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/LoginViewModel
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/MainViewModel.kt,d\0\d0138190506108400dcb9320bc87da1760422050
 Ö
 Uapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/RegisterViewModel.kt,3\6\36f591ba10ad4aec49b6cb8ccf221fb3f9522ca0
+{
+Kapp/src/main/java/com/victor/balboa/poketinder_2023/ui/view/HomeFragment.kt,7\4\743245cf45596eb9a4d24d77ae36e9f796948608
+{
+Kapp/src/main/java/com/victor/balboa/poketinder_2023/ui/view/InfoFragment.kt,7\1\7153c99577f44b7cc1aec478a24c02bbf3b564cd
+{
+Kapp/src/main/java/com/victor/balboa/poketinder_2023/ui/view/BaseFragment.kt,e\e\ee34d3b5ac1974ed4a72f99ccc67a50166060fe1
+
+Oapp/src/main/java/com/victor/balboa/poketinder_2023/ui/view/FavoriteFragment.kt,3\a\3a771b23a908820c6716f6c36c7383f5580024a2
+Ö
+Uapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/FavoriteViewModel.kt,8\8\88103323ab6ccc2ae760cc45616c2a8a317d6857
+Å
+Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/HomeViewModel.kt,5\4\54516756ae04c566c507803547ec8332291db75a
+Å
+Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/InfoViewModel.kt,2\5\25b651ee6ad4033f2f3e2c3e8f89e872abb261f5
