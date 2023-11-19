@@ -39,7 +39,9 @@ android {
 dependencies {
 
     //Card add to lab07
-    implementation "com.yuyakaido.android:card-stack-view:2.3.4"//Add to lab07
+    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.5'//Add to lab07
 
     //Start add dependencies lab06
     def room_version = "2.3.0"

@@ -32,8 +32,8 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infla
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initializeTinderCard()
         observeValues()
+        initializeTinderCard()
     }
 
     //button to listen to the swipe

@@ -12,6 +12,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class MainViewModel: ViewModel() {
 
+    //To see if works
+    private val retrofit: Retrofit = getRetrofit()
+
     val isLoading = MutableLiveData<Boolean>()
     val pokemonList = MutableLiveData<List<PokemonResponse>>()
     val errorPokeApi = MutableLiveData<Boolean>()
@@ -37,7 +40,7 @@ class MainViewModel: ViewModel() {
 
     private fun getRetrofit() : Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/pokemon")
+            .baseUrl("https://pokeapi.co/api/v2/pokemon/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

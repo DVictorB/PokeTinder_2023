@@ -37,7 +37,7 @@ class HomeViewModel: ViewModel() {
 
     private fun getRetrofit() : Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/pokemon")
+            .baseUrl("https://pokeapi.co/api/v2/pokemon/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

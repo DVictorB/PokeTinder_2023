@@ -2,6 +2,7 @@ package com.victor.balboa.poketinder_2023.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.victor.balboa.poketinder_2023.util.SharedPreferenceUtil
 import com.victor.balboa.poketinder_2023.data.model.User
@@ -48,4 +49,11 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
             binding.edtPassword.text.toString()
         )
     }
+
+    //To register activity
+    fun navigateToRegister(view: View) {
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
+    }
+
 }
