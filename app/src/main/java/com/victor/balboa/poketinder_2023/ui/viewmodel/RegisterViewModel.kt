@@ -11,7 +11,7 @@ class RegisterViewModel (private val context: Context): ViewModel(){
 
     private lateinit var sharedPreferenceUtil: SharedPreferenceUtil
 
-    var isValidated = false
+    private var isValidated = false
 
     val emptyFieldsError = MutableLiveData<Boolean>()
     val fieldsAuthenticateError = MutableLiveData<Boolean>()
@@ -25,11 +25,9 @@ class RegisterViewModel (private val context: Context): ViewModel(){
     }
 
     fun validateInputs(name: String, email: String, password: String, password2: String) {
-        //logs to see the values
-        Log.d("RegisterViewModel", "validateInputs called")
         if (name.isEmpty() || email.isEmpty() || password.isEmpty() || password2.isEmpty()) {
             emptyFieldsError.postValue(true)
-        } else if (password != password2) {
+        } else if (password !== password2) {
             passwordConfirmation.postValue(true)
         } else {
             //To validate the user

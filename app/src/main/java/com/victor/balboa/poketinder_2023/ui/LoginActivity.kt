@@ -13,11 +13,11 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
 
     private lateinit var loginViewModel: LoginViewModel
 
-    //Sí tenía
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //Sí tenía
+        //To start session
         binding.btnLogin.setOnClickListener{
             startLogin()
         }
@@ -29,7 +29,6 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
         loginViewModel.emptyFieldsError.observe(this) {
             Toast.makeText(this, "Ingrese los datos de usuario", Toast.LENGTH_SHORT).show()
         }
-
         loginViewModel.fieldsAuthenticateError.observe(this) {
             Toast.makeText(this, "Error de usuario", Toast.LENGTH_SHORT).show()
         }
@@ -38,11 +37,9 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        //
     }
 
-    //Sí tenía pero con las variables declaradas
+    //To login
     fun startLogin(){
         loginViewModel.validateInputs(
             binding.edtEmail.text.toString(),

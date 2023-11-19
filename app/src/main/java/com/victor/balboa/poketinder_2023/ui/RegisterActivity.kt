@@ -40,16 +40,8 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>(ActivityRegisterB
         }
 
         registerViewModel.goSuccessActivity.observe(this){
-            isValid ->
-            if (isValid) {
-                //Go to main activity
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
-            } else {
-                //To validate the user
-                Toast.makeText(this,"Complete los campos", Toast.LENGTH_SHORT).show()
-                binding.btnRegister.isEnabled = false
-            }
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
     private fun startRegister() {

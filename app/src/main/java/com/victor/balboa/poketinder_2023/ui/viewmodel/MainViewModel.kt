@@ -12,9 +12,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class MainViewModel: ViewModel() {
 
-    //To see if works
-    private val retrofit: Retrofit = getRetrofit()
-
     val isLoading = MutableLiveData<Boolean>()
     val pokemonList = MutableLiveData<List<PokemonResponse>>()
     val errorPokeApi = MutableLiveData<Boolean>()
