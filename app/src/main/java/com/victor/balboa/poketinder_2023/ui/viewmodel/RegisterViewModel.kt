@@ -27,7 +27,7 @@ class RegisterViewModel (private val context: Context): ViewModel(){
     fun validateInputs(name: String, email: String, password: String, password2: String) {
         if (name.isEmpty() || email.isEmpty() || password.isEmpty() || password2.isEmpty()) {
             emptyFieldsError.postValue(true)
-        } else if (password !== password2) {
+        } else if (password != password2) {
             passwordConfirmation.postValue(true)
         } else {
             //To validate the user
