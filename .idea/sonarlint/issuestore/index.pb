@@ -51,3 +51,5 @@ Uapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/FavoriteViewMo
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/HomeViewModel.kt,5\4\54516756ae04c566c507803547ec8332291db75a
 Å
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/InfoViewModel.kt,2\5\25b651ee6ad4033f2f3e2c3e8f89e872abb261f5
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
