@@ -1,7 +1,12 @@
 package com.victor.balboa.poketinder_2023.ui.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import androidx.room.Room
+import com.victor.balboa.poketinder_2023.data.database.PokemonDatabase
+import com.victor.balboa.poketinder_2023.data.database.entities.MyPokemonEntity
 import com.victor.balboa.poketinder_2023.data.model.PokemonResponse
 import com.victor.balboa.poketinder_2023.data.network.PokemonApi
 import kotlinx.coroutines.CoroutineScope
@@ -16,23 +21,42 @@ class HomeViewModel: ViewModel() {
     val pokemonList = MutableLiveData<List<PokemonResponse>>()
     val errorPokeApi = MutableLiveData<Boolean>()
 
+    private val POKEMON_DATABASE_NAME = "pokemon_database"
+
     init {
         getAllPokemons()
     }
 
-    private fun getAllPokemons() {
+    private fun getAllPokemons(){
         isLoading.postValue(true)
         CoroutineScope(Dispatchers.IO).launch {
-            val call = getRetrofit().create(PokemonApi::class.java).getPokemons()
             isLoading.postValue(false)
-            if (call.isSuccessful) {
-                call.body()?.let { body ->
-                    pokemonList.postValue(body.results)
+            val call = getRetrofit().create(PokemonApi::class.java).getPokemons()
+            if (call.isSuccessful){
+                call.body()?.let{
+                    pokemonList.postValue(it.results)
                 }
-            } else {
-                errorPokeApi.postValue(true)
             }
         }
+    }
+
+    fun savePokemon(pokemonResponse: PokemonResponse, context: Context) {
+        val myPokemon = MyPokemonEntity(
+            name = pokemonResponse.name,
+            image = pokemonResponse.getPokemonImage(),
+            idPokemon = pokemonResponse.getPokemonId()
+        )
+        viewModelScope.launch {
+            getRoomDatabase(context).getPokemonDao().insert(myPokemon)
+        }
+    }
+
+    private fun getRoomDatabase(context: Context): PokemonDatabase {
+        return Room.databaseBuilder(
+            context,
+            PokemonDatabase::class.java,
+            POKEMON_DATABASE_NAME
+        ).build()
     }
 
     private fun getRetrofit() : Retrofit {
@@ -41,5 +65,4 @@ class HomeViewModel: ViewModel() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
 }

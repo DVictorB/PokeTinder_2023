@@ -114,7 +114,10 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infla
     }
 
     override fun onCardSwiped(direction: Direction?) {
-
+        if (direction == Direction.Right) {
+            val pokemon = adapter.list[manager.topPosition - 1]
+            homeViewModel.savePokemon(pokemon, requireContext())
+        }
     }
 
     override fun onCardRewound() {

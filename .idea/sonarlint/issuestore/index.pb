@@ -53,3 +53,17 @@ Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/HomeViewModel.
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/InfoViewModel.kt,2\5\25b651ee6ad4033f2f3e2c3e8f89e872abb261f5
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+É
+Sapp/src/main/java/com/victor/balboa/poketinder_2023/data/database/dao/PokemonDao.kt,f\1\f11798075dc21180f943acdcd00b8d6eee334165
+ç
+]app/src/main/java/com/victor/balboa/poketinder_2023/data/database/entities/MyPokemonEntity.kt,2\0\201fb93bd98759bbf9ed489e55a52ccd82e0f0b0
+Ñ
+Tapp/src/main/java/com/victor/balboa/poketinder_2023/data/database/PokemonDatabase.kt,a\6\a61e69976d446da5d299087196c37c00a7f9a565
+É
+Sapp/src/main/java/com/victor/balboa/poketinder_2023/ui/adapter/MyPokemonsAdapter.kt,7\a\7af745944f0b6d94bcb3525b446463192a14f7ea
+Å
+Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/holder/MyPokemonsHolder.kt,a\b\abaea6f19265a7332438fe08445ac6265c3cad5b
+Ä
+Papp/src/main/java/com/victor/balboa/poketinder_2023/ui/adapter/PokemonAdapter.kt,7\5\756e319e7e734a6ca699a59763c1d58cac32ed41
