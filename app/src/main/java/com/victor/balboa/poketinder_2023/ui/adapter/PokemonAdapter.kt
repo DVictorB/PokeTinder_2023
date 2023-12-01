@@ -42,4 +42,4 @@ class PokemonAdapter (
     }
 }
 fun ViewGroup.inflate(layoutRes: Int) : View =
-    LayoutInflater.from(context).inflatgit styae(layoutRes,this,false)
+    LayoutInflater.from(context).inflate(layoutRes,this,false)
