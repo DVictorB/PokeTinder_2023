@@ -1,0 +1,10 @@
+
+;kotlin:S63101"Avoid hardcoded dispatchers.(Ô¥‚ü8º÷óÎÂ1
+;kotlin:S63109"Avoid hardcoded dispatchers.(Ô¥‚ü8¼÷óÎÂ1
+;kotlin:S6310'"Avoid hardcoded dispatchers.(¯—õ8¬àöÎÂ1
+;kotlin:S6310"Avoid hardcoded dispatchers.(¯—õ8§ÑüÎÂ1
+dkotlin:S6313&"EClasses extending "ViewModel" should not expose suspending functions.(Åëûß8¿÷óÎÂ1
+ikotlin:S63130"EClasses extending "ViewModel" should not expose suspending functions.(¢†›…øÿÿÿÿ8¿÷óÎÂ1
+dkotlin:S63138"EClasses extending "ViewModel" should not expose suspending functions.(¬È×¸8©ÑüÎÂ1
+>kotlin:S1128
+"Remove this unused import.(Ôê³¨ÿÿÿÿÿ8Å÷óÎÂ1
