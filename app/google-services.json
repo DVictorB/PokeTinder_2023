@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "790360644072",
+    "project_id": "poketinder-2023",
+    "storage_bucket": "poketinder-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790360644072:android:26a953d58fc4325e212c5d",
+        "android_client_info": {
+          "package_name": "com.victor.balboa.poketinder_2023"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtuh1KZrXEIQg_nwiab1GOQHR8koBpBiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

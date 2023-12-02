@@ -65,3 +65,7 @@ Sapp/src/main/java/com/victor/balboa/poketinder_2023/ui/adapter/MyPokemonsAdapte
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/holder/MyPokemonsHolder.kt,a\b\abaea6f19265a7332438fe08445ac6265c3cad5b
 €
 Papp/src/main/java/com/victor/balboa/poketinder_2023/ui/adapter/PokemonAdapter.kt,7\5\756e319e7e734a6ca699a59763c1d58cac32ed41
+Š
+Zapp/src/main/java/com/victor/balboa/poketinder_2023/data/FirebaseRemoteConfigRepository.kt,d\b\db724fd8e72f8bfb5f2d9963d09112899368cdba
+ƒ
+Sapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/SplashViewModel.kt,d\d\dd86f187503a9a1ca631716bd0fcd04fc2ed75c6
