@@ -8,10 +8,17 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
+<<<<<<< HEAD
                   <option name="appId" value="com.victor.balboa.poketinder_2023" />
                   <option name="mobileSdkAppId" value="1:790360644072:android:26a953d58fc4325e212c5d" />
                   <option name="projectId" value="poketinder-2023" />
                   <option name="projectNumber" value="790360644072" />
+=======
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
+>>>>>>> 2c76c1280952aa7a8b92258b9ee957726b014838
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
