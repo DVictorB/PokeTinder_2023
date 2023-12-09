@@ -29,8 +29,6 @@ Uapp/src/main/java/com/victor/balboa/poketinder_2023/data/model/PokemonListRespo
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/data/model/PokemonResponse.kt,9\3\938f8bbab3c67dd0dc2747cb6affe2eef237aaa6
 v
 Fapp/src/main/java/com/victor/balboa/poketinder_2023/data/model/User.kt,2\9\291fa9bb2d736208ad878584ae84870fd93c0954
-}
-Mapp/src/main/java/com/victor/balboa/poketinder_2023/adapter/PokemonAdapter.kt,6\4\642adcafff747900c59393d820b79c110bf125b5
 Ç
 Rapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/LoginViewModel.kt,9\6\965b4cc4ea4198a66ccf47c89b67b0469d96b970
 Å
@@ -67,3 +65,7 @@ Sapp/src/main/java/com/victor/balboa/poketinder_2023/ui/adapter/MyPokemonsAdapte
 Qapp/src/main/java/com/victor/balboa/poketinder_2023/ui/holder/MyPokemonsHolder.kt,a\b\abaea6f19265a7332438fe08445ac6265c3cad5b
 Ä
 Papp/src/main/java/com/victor/balboa/poketinder_2023/ui/adapter/PokemonAdapter.kt,7\5\756e319e7e734a6ca699a59763c1d58cac32ed41
+ä
+Zapp/src/main/java/com/victor/balboa/poketinder_2023/data/FirebaseRemoteConfigRepository.kt,d\b\db724fd8e72f8bfb5f2d9963d09112899368cdba
+É
+Sapp/src/main/java/com/victor/balboa/poketinder_2023/ui/viewmodel/SplashViewModel.kt,d\d\dd86f187503a9a1ca631716bd0fcd04fc2ed75c6

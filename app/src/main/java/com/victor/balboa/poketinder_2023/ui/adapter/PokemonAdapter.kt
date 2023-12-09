@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.victor.balboa.poketinder_2023.R
+import com.victor.balboa.poketinder_2023.data.database.entities.MyPokemonEntity
 import com.victor.balboa.poketinder_2023.data.model.PokemonResponse
 import com.victor.balboa.poketinder_2023.databinding.ItemPokemonBinding
 import javax.security.auth.callback.Callback

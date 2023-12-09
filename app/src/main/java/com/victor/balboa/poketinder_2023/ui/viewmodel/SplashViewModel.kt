@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.victor.balboa.poketinder_2023.data.FirebaseRemoteConfigRepository
 
-class InfoViewModel: ViewModel() {
+class SplashViewModel: ViewModel() {
 
     private var firebaseRemoteConfigRepository = FirebaseRemoteConfigRepository()
 
@@ -12,7 +12,7 @@ class InfoViewModel: ViewModel() {
         firebaseRemoteConfigRepository.init()
     }
 
-    fun getUrlPokemonLiveData(): MutableLiveData<String> {
-        return firebaseRemoteConfigRepository.getUrlPokemonLiveDAta
+    fun getIsUnderMaintenance(): MutableLiveData<Boolean> {
+        return firebaseRemoteConfigRepository.isUnderMaintenanceLiveData
     }
 }

@@ -1,11 +1,14 @@
 package com.victor.balboa.poketinder_2023.ui.view
 
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import com.victor.balboa.poketinder_2023.data.database.entities.MyPokemonEntity
 import com.victor.balboa.poketinder_2023.databinding.FragmentFavoriteBinding
 import com.victor.balboa.poketinder_2023.ui.adapter.MyPokemonsAdapter
 import com.victor.balboa.poketinder_2023.ui.viewmodel.FavoriteViewModel
+import kotlinx.coroutines.launch
 
 class FavoriteFragment : BaseFragment<FragmentFavoriteBinding>(FragmentFavoriteBinding::inflate) {
 
@@ -22,13 +25,20 @@ class FavoriteFragment : BaseFragment<FragmentFavoriteBinding>(FragmentFavoriteB
 
         binding.rvPokemons.adapter = adapter
 
-        favoriteViewModel.myPokemonList.observe(this) {
-            listMyPokemon.addAll(it)
+        favoriteViewModel.myPokemonList.observe(this) { myPokemons ->
+            // Filtra los duplicados antes de agregar a listMyPokemon
+            val uniquePokemons = myPokemons.distinctBy { it.idPokemon }
+            listMyPokemon.clear()
+            listMyPokemon.addAll(uniquePokemons)
             adapter.notifyDataSetChanged()
+            // Mostrar u ocultar el TextView según la lista esté vacía o no
+            binding.tvEmptyList.visibility = if (listMyPokemon.isEmpty()) View.VISIBLE else View.GONE
         }
 
         binding.floatingActionDelete.setOnClickListener {
-            favoriteViewModel.deleteAllPokemon(requireContext())
+            lifecycleScope.launch {
+                favoriteViewModel.deleteAllPokemon(requireContext())
+            }
         }
     }
 

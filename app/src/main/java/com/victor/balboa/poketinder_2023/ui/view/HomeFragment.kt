@@ -5,10 +5,12 @@ import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
 import androidx.core.view.isVisible
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DefaultItemAnimator
-import com.victor.balboa.poketinder_2023.adapter.PokemonAdapter
 import com.victor.balboa.poketinder_2023.data.model.PokemonResponse
 import com.victor.balboa.poketinder_2023.databinding.FragmentHomeBinding
+import com.victor.balboa.poketinder_2023.ui.adapter.PokemonAdapter
+import com.victor.balboa.poketinder_2023.ui.viewmodel.FavoriteViewModel
 import com.victor.balboa.poketinder_2023.ui.viewmodel.HomeViewModel
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager
 import com.yuyakaido.android.cardstackview.CardStackListener
@@ -29,6 +31,8 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infla
     private val manager by lazy { CardStackLayoutManager(context, this) }
 
     private val homeViewModel by lazy { HomeViewModel() }
+
+    private val favoriteViewModel: FavoriteViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -107,6 +111,11 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infla
                 supportsChangeAnimations = false
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        favoriteViewModel.getMyPokemons(requireContext())
     }
 
     override fun onCardDragging(direction: Direction?, ratio: Float) {
